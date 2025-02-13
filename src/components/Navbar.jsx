@@ -10,16 +10,11 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container">
         <NavLink
-          className="navbar-brand d-flex align-items-center justify-content-center rounded-circle overflow-hidden"
+          className="navbar-brand d-flex align-items-center justify-content-center"
           style={{ width: "50px", height: "50px" }}
           to="/"
         >
-          <img
-            src={JohnLogo}
-            alt="Logo"
-            className="w-100 h-100"
-            style={{ objectFit: "cover" }}
-          />
+          <h1 style={{ font: "24px" }}>John</h1>
         </NavLink>
 
         {/* Custom toggle button */}
@@ -36,6 +31,15 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav ms-auto">
+            <li className="nav-item d-block d-md-none">
+              <NavLink
+                className="nav-link"
+                to="/"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </NavLink>
+            </li>
             <li className="nav-item">
               <NavLink
                 className="nav-link"

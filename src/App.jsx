@@ -7,6 +7,7 @@ import Works from "./pages/Works";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import "./App.css";
 
 function App() {
   return (
@@ -20,7 +21,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      {/* Footer */}
       <Footer />
     </>
   );
