@@ -1,0 +1,41 @@
+/* General styling for inputs and textareas */
+.custom-input {
+  border: none !important;
+  border-bottom: 2px solid #000 !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  padding: 8px 5px !important;
+  background-color: transparent !important;
+  width: 100%;
+  position: relative !important;
+}
+
+.custom-input:focus {
+  border-bottom: 2px solid #007bff !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Style the text area container */
+.textarea-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Create a custom placeholder using ::before */
+.textarea-container::before {
+  content: "Enter Your Message"; /* Custom placeholder text */
+  position: absolute;
+  bottom: 8px; /* Position at the bottom */
+  left: 5px; /* Align to the left */
+  font-size: 14px;
+  color: #aaa; /* Light grey color */
+  pointer-events: none; /* Prevent user interaction */
+  transition: 0.3s ease;
+}
+
+/* Hide custom placeholder when the user types */
+.custom-input:focus + .textarea-container::before,
+.custom-input:not(:placeholder-shown) + .textarea-container::before {
+  opacity: 0 !important;
+}
