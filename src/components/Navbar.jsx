@@ -31,7 +31,7 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item d-block d-md-none">
+            <li className="nav-item d-block md-none">
               <NavLink
                 className="nav-link"
                 to="/"
