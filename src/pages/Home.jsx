@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Blog from "./Blog";
 import Works from "./Works";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <About />
       <Works />
       <Blog />
+      <Contact />
     </div>
   );
 }
